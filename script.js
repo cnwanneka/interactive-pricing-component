@@ -8,7 +8,12 @@ let isYearly = false;
 
 slider.addEventListener('input', function() {
     updateValue();
-    console.log(slider.value);
+    view.innerHTML = pageViews[slider.value];
+
+    let value = this.value * 25;
+
+    this.style.background = 'linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ' + value + '%, hsl(224, 65%, 95%) ' + value + '%, hsl(224, 65%, 95%) 100%)';
+    
 });
 
 toggle.addEventListener('change', function() {
