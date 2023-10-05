@@ -12,7 +12,11 @@ slider.addEventListener('input', function() {
 
     let value = this.value * 25;
 
-    this.style.background = 'linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ' + value + '%, hsl(224, 65%, 95%) ' + value + '%, hsl(224, 65%, 95%) 100%)';
+    this.style.background = `linear-gradient(to right, 
+        hsl(174, 77%, 80%) 0%, 
+        hsl(174, 77%, 80%) ${value}%,
+        hsl(224, 65%, 95%) 0%,
+        hsl(224, 65%, 95%) 100%)`
     
 });
 

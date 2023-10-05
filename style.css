@@ -167,3 +167,25 @@ input#price-slider::-webkit-slider-thumb:hover{
 hr {
     border-top: 1px solid rgba(0,0,0,0.1);
 }
+.cst2 {
+    display: none;
+}
+p.discount2 {
+    display: none;
+}
+@media only screen and (max-width:425px) {
+    body {
+        font-size: 13px;
+    }
+    .cst {
+        display: none;
+    }
+    .cst2 {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+    .packages {
+        flex-direction: column;
+    }
+}
