@@ -188,4 +188,27 @@ p.discount2 {
     .packages {
         flex-direction: column;
     }
+    p.discount {
+        display: none;
+    }
+    
+    p.discount2 {
+        display: inline-block;
+    }
+
+    .top-content,
+    .footer{
+        padding: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer a {
+        margin-top: 20px;
+    }
+    
+
 }

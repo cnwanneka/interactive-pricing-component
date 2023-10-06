@@ -1,5 +1,6 @@
 let view = document.getElementById('pageView');
 let cost = document.getElementById('cost');
+let cost2 = document.getElementById('cost2');
 let slider = document.getElementById('price-slider');
 let toggle = document.getElementById('billing');
 let pageViews = ['10K', '50K', '100K', '500K', '1M'];
@@ -31,7 +32,9 @@ toggle.addEventListener('change', function() {
 function updateValue(){
     if(isYearly){
         cost.innerHTML = perMonth[slider.value] * 0.75
+        cost2.innerHTML = perMonth[slider.value] * 0.75
     } else {
         cost.innerHTML = perMonth[slider.value]
+        cost2.innerHTML = perMonth[slider.value]
     }
 }    
